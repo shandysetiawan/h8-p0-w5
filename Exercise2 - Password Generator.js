@@ -83,9 +83,9 @@ function passwordGenerator(name) {
   var vocal = changeVocals(name);
   var rev = reverseWord(vocal);
   var upLow = setLowerUpperCase(rev);
-  var remove = removeSpaces(upLow);
+  var password = removeSpaces(upLow);
 
-  return remove;
+  return password;
 }
 
 console.log(passwordGenerator("Sergei Dragunov")); // 'VPNVGBRdJFGRFs'
